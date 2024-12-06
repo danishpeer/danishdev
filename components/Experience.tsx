@@ -10,7 +10,7 @@ const Experience = () => {
             
         </h1>
         <div className='w-full mt-12 grid lg:grid-cols-8 grid-cols-2 gap-10'>
-            {workExperience.map(card => (
+            {workExperience && workExperience.map(card => (
                 <Button key={card.id} borderRadius='1.75rem' className='flex-1 text-white border-neutral-200 dark:border-slate-800' duration={Math.floor(Math.random()* 10000)+10000}>
                     <div className='flex flex-col items-center justify-center p-3 py-6 md:p-5 lg:p-10 gap-2 '>
                         <img src={card.thumbnail} alt={card.thumbnail} className='lg:w-32 md:w-20 w-20'/>

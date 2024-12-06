@@ -20,7 +20,7 @@ const Footer = () => {
         <p className='md:text-base text-small md:font-normal font-light'> Copyright © 2024 Peerzada Danish</p>
         <div className='flex items-center md:gap-3 gap-6'>
             {
-                socialMedia.map(profile => (
+                socialMedia && socialMedia.map(profile => (
                     <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
                         <Link href={profile.href}><img src={profile.img} alt={profile.img} width={20} height={20} /></Link>
                     </div>
