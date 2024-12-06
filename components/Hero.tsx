@@ -1,5 +1,4 @@
 import React from 'react'
-import { FlipWords } from './ui/flip-words'
 import { Spotlight } from './ui/spotlight';
 import ShimmerButton from './ui/shimmer-button';
 import { FaExpand } from 'react-icons/fa';
